@@ -32,7 +32,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             padding: 0 10px;
-            background-color: #c9c4d1; /* Matching the hero lavender */
+            background-color: #c9c4d1;
         }
         
         .grid-item { aspect-ratio: 3 / 4; overflow: hidden; }
@@ -47,11 +47,25 @@
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             max-width: 1200px;
-            margin: 0 auto 100px auto;
+            margin: 0 auto 60px auto;
             padding: 0 20px;
         }
         .bottom-item { aspect-ratio: 1 / 1; overflow: hidden; background-color: #ddd; }
         .bottom-item img { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Contact Section */
+        .contact-footer { text-align: center; padding: 60px 20px 100px; }
+        .contact-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #4a3728;
+            color: #f2ede4;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+        .contact-button:hover { opacity: 0.8; }
 
         @media (max-width: 768px) {
             .hero { flex-direction: column; }
@@ -66,7 +80,9 @@
 
     <section class="hero">
         <div class="hero-text"><h1>Gabriel and Maya<br>seeking cozy home</h1></div>
-        <div class="hero-image"><img src="https://via.placeholder.com/800x800" alt="Main Photo"></div>
+        <div class="hero-image">
+            <img src="pics/main-hero.jpg" alt="Gabriel and Maya">
+        </div>
     </section>
 
     <div class="intro-content">
@@ -74,9 +90,9 @@
     </div>
 
     <div class="grid-container">
-        <div class="grid-item"><img src="https://via.placeholder.com/600x800" alt="Travel 1"></div>
-        <div class="grid-item"><img src="https://via.placeholder.com/600x800" alt="Travel 2"></div>
-        <div class="grid-item"><img src="https://via.placeholder.com/600x800" alt="Travel 3"></div>
+        <div class="grid-item"><img src="pics/travel-1.jpg" alt="travel1"></div>
+        <div class="grid-item"><img src="pics/travel-2.jpg" alt="wedding"></div>
+        <div class="grid-item"><img src="pics/travel-3.jpg" alt="beach"></div>
     </div>
 
     <div class="lifestyle-text">
@@ -89,8 +105,13 @@
     </div>
 
     <div class="bottom-grid">
-        <div class="bottom-item"><img src="https://via.placeholder.com/800x800" alt="Our current home"></div>
-        <div class="bottom-item"><img src="https://via.placeholder.com/800x800" alt="Googoosh the cat"></div>
+        <div class="bottom-item"><img src="pics/interior.jpg" alt="house1"></div>
+        <div class="bottom-item"><img src="pics/googoosh.jpg" alt="cat"></div>
+    </div>
+
+    <div class="contact-footer">
+        <p>Think we'd be a good match for your home?</p>
+        <a href="mailto:your-email@example.com?subject=Housing%20in%20Amsterdam" class="contact-button">Get in touch</a>
     </div>
 
 </body>
